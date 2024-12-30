@@ -15,7 +15,7 @@ let z=b();
 console.log(z);
 
 //function name is not given
-let getMultiplication=function(a,b){
+let getMultiplication=function(a,b){ //this is called function expression
     return a*b;
 }
 let ans=getMultiplication(2,3);
@@ -27,3 +27,4 @@ let exp=(x,y) =>{ //function hta ke arrow lga do bracket ke baad
 }
 console.log(exp(2,3));
 console.log("hello ");
+
