@@ -26,4 +26,4 @@ let exp=(x,y) =>{ //function hta ke arrow lga do bracket ke baad
     return x**y;
 }
 console.log(exp(2,3));
-console.log("hello world");
+console.log("hello ");
