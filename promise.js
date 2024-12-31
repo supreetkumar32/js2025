@@ -1,4 +1,4 @@
-
+//PROMISE: It is an object which have two objects (resolve and reject)
 let firstPromise = new Promise((resolve,reject)=>{
 
     setTimeout(function sayMyName(){
