@@ -25,5 +25,20 @@ function changeText(event){
 /////////////////////default action
 let anchorElement=document.getElementById('fanchor');
 anchorElement.addEventListener('click',function(event){
-    event.preventDefault();
+    event.preventDefault();//it wil prevent the default the element .In this case, when we click
+    //  on the anchor element it will not take us to a particular link
 })
+
+//removing too many listeners
+let paras=document.querySelectorAll('p');
+function alertPara(event){
+    if(event.target.nodeName==='span'){
+    alert("you have clicked on para: "+event.target.textContent);
+    }
+}
+
+for(int i=0;i<paras.length;i++){
+    paras[i].addEventListener('click',alertPara);//saare paras ko ek hi listener se attaach ar 
+    // diye...agar addEventListeer ke andar alertPara ke jagah function likhte to jitne para 
+    // haai utne listener k object ban jaata
+}
